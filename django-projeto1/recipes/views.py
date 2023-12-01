@@ -1,9 +1,10 @@
+
 from django.shortcuts import render
 from django.http import HttpResponse
 
 
 def home(request):
-    return render(request, 'global/home.html') # global ou recipes são namspaces
+    return render(request, 'recipes/home.html', context={'name':'Ashley Riot',}) # global ou recipes são namspaces
 
 
 def my_sobre(request):
