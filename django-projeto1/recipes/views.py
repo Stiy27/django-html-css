@@ -1,14 +1,10 @@
-#from django.shortcuts import render
-
-# Create your views here.
-
+from django.shortcuts import render
 from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('<h1>Minha primeira HttpResponse!</h1>\
-                         <ul><li><a href="/sobre/">Sobre</a></li>\
-                         <li><a href="/contato/">Contato</a></li></ul>')
+    return render(request, 'global/home.html') # global ou recipes são namspaces
+
 
 def my_sobre(request):
     return HttpResponse('<h1>Página sobre mim!</h1>\
