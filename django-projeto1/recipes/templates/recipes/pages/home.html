@@ -5,21 +5,15 @@
 
     <section class="search-container">
         {% include "recipes/partials/search.html" %}
-     <!-- FIM DO SEARCH ##############################################################-->
 
         <main class="main-content-container">
             <div class="main-content main-content-list container">
-
+                {% include "recipes/partials/recipes.html" %}
             </div>
         </main>
-
     </section>
 
-    <!-- FIM DO BODY ##############################################################-->
-
-    <footer>
-
-    </footer>
+    {% include "recipes/partials/footer.html" %}
 </body>
 
 </html>
